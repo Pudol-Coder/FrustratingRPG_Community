@@ -1,0 +1,27 @@
+:root{--bg:#fff;--fg:#1c1f23;--muted:#6b7280;--card:#f4f6f8;--line:#e2e5e9;--accent:#00a69c}
+@media(prefers-color-scheme:dark){:root{--bg:#14171a;--fg:#e8eaed;--muted:#9aa0a6;--card:#1f2327;--line:#2f353a;--accent:#2fd0c4}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+header{display:flex;justify-content:space-between;align-items:center;max-width:860px;margin:0 auto;padding:16px 20px;border-bottom:1px solid var(--line)}
+.brand{font-weight:800;font-size:1.15rem;color:var(--fg)}
+nav a{margin-left:16px}
+main{max-width:860px;margin:0 auto;padding:20px}
+footer{max-width:860px;margin:30px auto;padding:0 20px;color:var(--muted);font-size:.85rem}
+input[type=search]{width:100%;padding:12px 14px;font-size:1rem;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg)}
+.chips{margin:14px 0}
+.chip{margin:0 6px 6px 0;padding:5px 13px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--fg);cursor:pointer;font-size:.9rem}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.card{display:block;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--fg)}
+.card:hover{border-color:var(--accent);text-decoration:none}
+.card p{margin:4px 0 0;color:var(--muted);font-size:.9rem}
+.badge{display:inline-block;margin-right:6px;padding:0 8px;border-radius:6px;background:var(--accent);color:#fff;font-size:.75rem}
+.muted{color:var(--muted)}
+h1{margin:.2em 0}
+table{border-collapse:collapse;margin:12px 0}
+td{padding:6px 14px 6px 0;border-bottom:1px solid var(--line)}td:first-child{color:var(--muted)}
+.spoiler{filter:blur(7px);cursor:pointer;user-select:none}
+.spoiler.open{filter:none;cursor:auto;user-select:auto}
+.hint{font-size:.85rem;color:var(--muted)}
+ul.hist{padding-left:18px;color:var(--muted);font-size:.9rem}
